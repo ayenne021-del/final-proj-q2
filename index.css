@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- NAVBAR STYLE --- */
+nav {
+  background-color: #DF7027; /* Main orange */
+  padding: 0 40px; /* Remove vertical padding so link blocks fill nav height */
+  height: 70px; /* Fixed neat height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #DD8627;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Left brand section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-left img {
+  width: 55px;
+  height: 55px;
+}
+
+.nav-left h1 {
+  font-size: 26px;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-left h1 a {
+  color: white;               /* plain white text */
+  text-decoration: none;      /* remove underline */
+  transition: color 0.3s ease;
+}
+
+.nav-left h1 a:hover {
+  color: #a5d6d9;             /* light teal hover (same as About Us default) */
+}
+
+/* RIGHT SIDE LINKS – EVEN SPACING & FULL-HEIGHT RECTANGLES */
+.nav-right {
+  display: flex;
+  gap: 10px; /* EVEN spacing between the 3 items */
+  height: 100%; /* Makes them match navbar height */
+  align-items: stretch; /* ensures children stretch */
+}
+
+/* Standard link blocks */
+.nav-right a {
+  display: flex;            /* make link a block */
+  align-items: center;      /* center vertically */
+  padding: 0 20px;          /* equal left-right spacing */
+  height: 100%;             /* full navbar height = full rectangle */
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* HOVER covers full rectangle */
+.nav-right a:hover {
+  background-color: #DD8627; 
+  color: #ffffff;
+  transition: 0.3s ease;
+  transform: rotate(6deg);
+}
+
+/* ABOUT US BUTTON – rectangle, full height, teal base */
+.about-btn {
+  background-color: #699FA1; 
+}
+
+/* ABOUT HOVER – turn orange */
+.about-btn:hover {
+  background-color: #DD8627 !important; /* orange hover */
+  transition: 0.3s ease;
+  transform: rotate(6deg);
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+p {
+  font-size: medium;
+  line-height: 1.6;
+  max-width: 800px;;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+#thinking {
+  float: right;
+  width: 440px;
+  padding-top: 16px;
+}
+
+.p-img-row {
+  display: flex;
+  align-items: flex-start; /* or center for vertical alignment */
+  justify-content: center;
+  gap: 6px; /* space between text and image */
+  padding-bottom: 15px;
+}
+
+.first-p {
+  max-width: 500px;
+  margin-top: 8px;
+}
+
+.header h1, .header h2 {
+  padding-left: 265px;
+  margin-bottom: 8px;
+}
+
+.p-img-row-2 {
+  display: flex;
+  align-items: center; /* or center for vertical alignment */
+  justify-content: center;
+}
+
+#p2 {
+  max-width: 950px;
+  margin-top: -10px;
+}
+
+#nalisodan {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 100%;
+  max-width: 950px;       /* limits table width */
+  border-collapse: collapse;
+  margin: 20px auto;       /* centers the table */
+  font-family: "Segoe UI", Arial, sans-serif;
+  border: 2px solid black; /* outer border */
+}
+
+th, td {
+  border: 2px solid black; /* cell borders */
+  padding: 10px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: aliceblue;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+#career-guidance {
+  max-width: 950px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recent-approaches {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: aliceblue;
+  text-align: center; /* center text and headings inside */
+  padding: 20px 0; /* vertical spacing for the section */
+}
+
+#raheading {
+  padding-top: 10px;
+  padding-left: 0;
+  text-align: center;
+}
+
+.pthreefour p {
+  text-align: center;
+  padding-left: 0;
+  max-width: 950px;
+  margin: 0 auto; /* center the paragraph block */
+}
+
+.image {
+  padding-left: 0;
+  padding-bottom: 10px;
+  display: block;
+  margin: 0 auto; /* center images inside the section */
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.section h2 {
+  text-align: center;
+  margin: 0 0 30px 0; /* no top margin, only bottom */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Two-column layout */
+.text-columns {
+  display: flex;
+  justify-content: center;
+}
+
+/* Each column */
+.text-column {
+  flex: 1;
+  max-width: 400px;
+  text-align: justify;
+  line-height: 1.6;
+  padding: 20px;              /* ⬅ padding on all sides */
+}
+
+/* Divider on the left column only */
+.text-column:first-child {
+  border-right: 1px solid #ccc;  /* ⬅ clean centered divider */
+}
+
+.cta {
+  display: flex;
+  align-items: center;   /* ⬅ centers text block vertically to the image */
+  max-width: 950px;
+  margin: 20px auto;
+}
+
+.cta .sol {
+  margin-right: 20px;
+  max-width: 300px; 
+  height: auto;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* ⬅ vertically centers the text inside */
+}
+
+.cta-text h1,
+.cta-text h2,
+.cta-text h3 {
+  margin: 0 0 10px 0;  /* remove top gaps and keep small spacing between lines */
+}
+
+h3 {
+  text-decoration: none;
+}
+
+#wwci {
+  padding-left: 0;
+}
+
+img {
+  border-radius: 30px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #efefef;
+  color: #545454;
+  text-align: left;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  float: left;
+}
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  height: 70px;
+}
+
+.footer a {
+  color: #545454;
+  text-decoration: none;
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+
+.right {
+  float: right;
+}
+
+.footer .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;  /* reduce gap between profile image and details */
+}
+
+.right h5 {
+  padding-right: 20px;
+}
+
+#profile {
+  height: 55px;
+}
+
+.profile-details h5 {
+  color:#545454;
+}
+
+.footer .left {
+  display: flex;
+  gap: 24px;         /* space between links */
+  align-items: center;
+  margin-top: 20px; 
+}
+.footer .left a {
+  font-size: 0.9em;  /* smaller than h5 */
+  text-align: left;
+}

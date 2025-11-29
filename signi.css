@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- NAVBAR STYLE --- */
+nav {
+  background-color: #DF7027; /* Main orange */
+  padding: 0 40px; /* Remove vertical padding so link blocks fill nav height */
+  height: 70px; /* Fixed neat height */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 5px solid #DD8627;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Left brand section */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-left img {
+  width: 55px;
+  height: 55px;
+}
+
+.nav-left h1 {
+  font-size: 26px;
+  color: white;
+  font-weight: 700;
+}
+
+.nav-left h1 a {
+  color: white;               /* plain white text */
+  text-decoration: none;      /* remove underline */
+  transition: color 0.3s ease;
+}
+
+.nav-left h1 a:hover {
+  color: #a5d6d9;             /* light teal hover (same as About Us default) */
+}
+
+/* RIGHT SIDE LINKS – EVEN SPACING & FULL-HEIGHT RECTANGLES */
+.nav-right {
+  display: flex;
+  gap: 10px; /* EVEN spacing between the 3 items */
+  height: 100%; /* Makes them match navbar height */
+  align-items: stretch; /* ensures children stretch */
+}
+
+/* Standard link blocks */
+.nav-right a {
+  display: flex;            /* make link a block */
+  align-items: center;      /* center vertically */
+  padding: 0 20px;          /* equal left-right spacing */
+  height: 100%;             /* full navbar height = full rectangle */
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+/* HOVER covers full rectangle */
+.nav-right a:hover {
+  background-color: #DD8627; /* teal hover */
+  color: #ffffff;
+  transition: 0.3s ease;
+  transform: rotate(6deg);
+}
+
+/* ABOUT US BUTTON – rectangle, full height, teal base */
+.about-btn {
+  background-color: #699FA1; 
+}
+
+/* ABOUT HOVER – turn orange */
+.about-btn:hover {
+  background-color: #DD8627 !important; /* orange hover */
+  transition: 0.3s ease;
+  transform: rotate(6deg);
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* GLOBAL TEXT WIDTH */
+p {
+    max-width: 800px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+/* ---------------- TOP IMAGE ROW ---------------- */
+.top-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.img-box {
+    width: 300px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+.img-box2 {
+    width: 300px;
+    margin-top: 40px;
+    margin-bottom: -40px;
+    z-index: 1;
+}
+
+/* ---------------- FIRST SECTION ---------------- */
+.first-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    background-color: aliceblue;
+}
+
+.first-text {
+    max-width: 600px;
+}
+
+.video-container iframe {
+    width: 300px;
+    height: 200px;
+}
+
+/* ---------------- SECOND + THIRD ---------------- */
+.second-third {
+    display: flex;
+    justify-content: center;
+    gap: 60px;               /* space between text and the line */
+    width: 1000px;           /* matches the layout in your screenshot */
+    margin: 40px auto;
+    position: relative;
+    padding: 20px 0;
+}
+
+/* Paragraph boxes */
+.second-third .box {
+    width: 420px;            /* wide text blocks like your example */
+    text-align: justify;
+}
+
+/* Vertical separator */
+.second-third::before {
+    content: "";
+    width: 2px;
+    background: #bbb;
+    height: 90%;             /* similar height to the text */
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+}
+
+/* Vertical separator line */
+.second-third::before {
+    content: "";
+    position: absolute;
+    left: 50%;           /* center line between columns */
+    top: 0;
+    bottom: 0;
+    width: 1.5px;
+    background: #333;    /* separator color */
+    transform: translateX(-50%);
+}
+
+.references ul {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ---------------- REFERENCES ---------------- */
+.references {
+    padding: 30px 20px;
+    background-color: aliceblue;
+}
+
+.references ul {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer {
+  width: 100%;
+  background-color: #efefef;
+  color: #545454;
+  text-align: left;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  float: left;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  height: 70px;
+}
+
+.footer a {
+  color: #545454;
+  text-decoration: none;
+}
+
+.left {
+  float: left;
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+
+.right {
+  float: right;
+}
+
+.footer .right {
+  display: flex;
+  align-items: center;
+  gap: 8px;  /* reduce gap between profile image and details */
+}
+
+.right h5 {
+  padding-right: 20px;
+}
+
+#profile {
+  height: 55px;
+  border-radius: 0;
+  width: auto;
+  object-fit: contain;
+}
+
+.profile-details h5 {
+  color:#545454;
+}
+
+.footer .left {
+  display: flex;
+  gap: 24px;         /* space between links */
+  align-items: center;
+  margin-top: 20px; 
+}
+.footer .left a {
+  font-size: 0.9em;  /* smaller than h5 */
+  text-align: left;
+}
